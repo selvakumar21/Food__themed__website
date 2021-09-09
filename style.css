@@ -6,99 +6,149 @@
 
 .body{
     font-family: 'Merriweather', serif;
-    background-color: #ebf2ff;
-    overflow-x: hidden;
     transition: 0.5s;
 }
 
 .navbar{
     display: flex;
-    background-color: rgba(255,255,255,255);
-    padding: 10px 10px;
-    justify-content: space-between;
-    align-items: center;
-     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 1rem;
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);;
 }
-
-.hide__mobile {
-    display: none ;
-  }
-
-.hamburger__menu div {
-    width: 35px;
-    height: 6px;
-    border-radius: 5px;
-    background-color:black;
-    margin: 6px 0;
-  }
 
 .brand__logo{
-    width: 100px;
+    width: 150px;
 }
 
+.nav__items ul li{
+    list-style: none;
+}     
 
-.nav__items__list{
-    /* display: none; */
+.nav__items ul a{
+    text-decoration: none;
+    color: #4b932e;
+    font-weight: 600;
+    
+}
+
+.nav__items ul a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #4b932e;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav__items ul a:hover::after{
+    width: 100%;
+}
+
+.button__primary{
+    margin-top: 1rem;
+    padding: 10px 20px;
+    border: 0;
+    background-color: transparent;    
+    color:#4b932e;
+    font-weight: 600;
+    font-size: 1rem ;
+    transition: 0.25s;
+}
+
+.button__primary:hover{
+    background-color: #4b932e;
+    color:white;
+}
+
+span{
+    color: #c9012e;
+    font-size: 3rem;
 }
 
 .hero__container{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     background-color: black;
+    flex-direction: column;
     align-items: center;
-
-}
-.image__png{
-    margin: 10rem 1rem 1rem 1rem;
-    height: 250px;
+    height: 150vh;
     
 }
+.rj__img{
+    width: 100%;
+    height:50vh;    
+    object-fit: contain;
+}
+
 .hero__text{
-    margin: 1rem; 
+    margin: 1rem 1.5rem;
     color: white;
-    font-size: 34px;
+    font-size: 2rem;
     text-align: center;
-
-.
-
-
-
 }
-
-@media(min-width: 768px){
+@media(min-width:768px){
     .navbar{
-        padding: 20px 120px;
+        padding: 1.5rem 2rem; 
     }
 
-    .brand__logo{
-        width: 120px;
-        border-radius: 5px;
+    .nav__items{
+        flex: 1;
     }
 
-    .hide__mobile {
-        display:block;
-      }
-    
-      .mobile__only {
-        display: none ;
-      }
+    .nav__items ul{
+        display: inline;
+    }
 
-    .item{
+    .nav__items ul li{
         display: inline-block;
         padding: 8px 25px;
+    }
+    .nav__items .button__primary{
+        margin-left: 50%;
+    }
 
-    }    
+    .hero__text{
+        margin: 60px 130px;
+        color: white;
+        font-size: 64px;
+    }
 
-    .nav__items__list{
-        display: inline;
-        margin-top: 40px;
-    }    
+    .hero__text span{
+        font-size: 100px;
+    }
 
-    .image__png{
-        height: 500px;
+    .rj__img{
+        height: auto;
+        object-fit:cover;
+    }
+    .hero__container{
+        height: auto;
+    }
+
+    .vertical__bar{
+        height: 100%;
+        background:transparent;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .social__icon{
+        height: 35%;
+        width: 80px;
+        background:#4b932e; 
+        text-align: center;
+        padding-top:27%;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .social__icon .fa{
+        margin: 15px 23px;
+        display: block;
+        padding: 8px;
+        border: 1px solid #000;
+        border-radius: 50%;
     }
 }
-
-

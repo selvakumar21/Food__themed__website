@@ -9,37 +9,41 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
     <header>
         <nav class="navbar">
             <div class="nav__brand">
                     <img src="./assets/logo.jpg" alt="logo" class="brand__logo">
                 </div>
-                <div class="nav__items__list">
-                    <button class="button__primary hide__mobile">Order Food</button>
-                    <button class="button__primary hamburger__menu mobile__only" id="hamburgermenu">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </button>
+                <div class="nav__items">
                     <ul>
+                        <i class="fa fa-bars"></i>
                         <li><a class="item" href="#">HOME</a></li> 
                         <li><a class="item" href="#">ABOUT</a></li>
                         <li><a class="item" href="#">MENU</a></li>        
                         <li><a class="item" href="#">CONTACT</a></li>
                     </ul>
-                    
+                    <button class="button__primary">Sign up</button>
                 </div>
             </div>            
         </nav>
     </header>
-    <section class="hero__section__container">
-        <div class="hero__container">
+    <section class="hero__container">
+            <div class="hero__text"><h1>FOOD <span>doesn't have a religion.</span> It is a religion</h1></div>
             <div class="hero__image">
-                <img src="./assets/raj-kachori.png" class="image__png"/>
+                <img src="./assets/raj-kachori.png" alt="Raj kachori" class="rj__img"/>
             </div>
-            <div class="hero__text">WELCOME TO THE CHAATIMES</div>  
-            <button class="explore__btn">Explore</button>  
+            <div class="hero__text"><h1>Welcome to the <span>CHAATIMES!</span></h1></div>  
+            <button class="button__primary">Explore</button>  
+        </div>
+    </section>
+    <section class="vertical__bar">
+        <div class="social__icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-pinterest"></i>
         </div>
     </section>
 </body>
