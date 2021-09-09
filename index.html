@@ -15,10 +15,10 @@
         <nav class="navbar">
             <div class="nav__brand">
                     <img src="./assets/logo.jpg" alt="logo" class="brand__logo">
-                </div>
-                <div class="nav__items">
+            </div>
+                <div class="nav__items mobile__only" id="nav__items">
+                    <i class="fa fa-close" onclick="closeMenu()"></i>
                     <ul>
-                        <i class="fa fa-bars"></i>
                         <li><a class="item" href="#">HOME</a></li> 
                         <li><a class="item" href="#">ABOUT</a></li>
                         <li><a class="item" href="#">MENU</a></li>        
@@ -26,7 +26,7 @@
                     </ul>
                     <button class="button__primary">Sign up</button>
                 </div>
-            </div>            
+                <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
     </header>
     <section class="hero__container">
@@ -44,6 +44,14 @@
             <i class="fa fa-instagram"></i>
             <i class="fa fa-twitter"></i>
             <i class="fa fa-pinterest"></i>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__text">
+            <p>The Chaatimes presents the delightful chaat made even more scrumptious by globalizing it with an infusion of ingredients from all over the world.The result is a fusion chaat. The Chaatimes has impeccable genes from those experienced in running premium restaurants and brings comfort foods with tastes that cater to elites who value novelty and health.</p>
+            <div class="about">
+                 
+            </div>
         </div>
     </section>
 </body>

@@ -72,7 +72,7 @@ span{
     background-color: black;
     flex-direction: column;
     align-items: center;
-    height: 150vh;
+    height: 110vh;
     
 }
 .rj__img{
@@ -87,6 +87,40 @@ span{
     font-size: 2rem;
     text-align: center;
 }
+
+.vertical__bar{
+    display: none;
+}
+
+.fa-bars{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.navbar .fa{
+    display: block;
+    margin: 10px 25px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.nav__items .mobile__only{
+    height: 100vh;
+    width: 200px;
+    background: #000;
+    top: 0;
+    right: -200;
+    position:absolute;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.fa-close{
+    color: white;
+}
+
 @media(min-width:768px){
     .navbar{
         padding: 1.5rem 2rem; 
@@ -94,7 +128,7 @@ span{
 
     .nav__items{
         flex: 1;
-    }
+        }
 
     .nav__items ul{
         display: inline;
@@ -111,24 +145,25 @@ span{
     .hero__text{
         margin: 60px 130px;
         color: white;
-        font-size: 64px;
+        font-size: 50px;
     }
 
     .hero__text span{
-        font-size: 100px;
+        font-size: 70px;
     }
 
     .rj__img{
         height: auto;
-        object-fit:cover;
+        object-fit: none;
     }
+    
     .hero__container{
         height: auto;
     }
 
     .vertical__bar{
         height: 100%;
-        background:transparent;
+        background:yellow;
         top: 0;
         left: 0;
         position: absolute;
@@ -140,8 +175,8 @@ span{
         background:#4b932e; 
         text-align: center;
         padding-top:27%;
-        bottom: 0;
-        position: absolute;
+        top: 0;
+        position:absolute;
     }
 
     .social__icon .fa{
@@ -151,4 +186,8 @@ span{
         border: 1px solid #000;
         border-radius: 50%;
     }
+    .navbar .fa{
+        display: none;
+    }
+
 }
