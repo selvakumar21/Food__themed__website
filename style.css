@@ -137,6 +137,7 @@ span{
 }
 
 .text__menu{
+    padding-top: 1rem;
     font-weight: 600;
     font-size: 40px;
     text-align: center;
@@ -154,12 +155,13 @@ span{
   }
   
   .food__menu__card {
-      padding: 1rem;
+    padding: 1rem;
     margin-top: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 100%;
     background-color: white;
+
   }
   
   .food__menu__card:hover {
@@ -178,7 +180,78 @@ span{
     color:black ;
   }
 
+  .food__menu__card__details p{
+    padding: 10px;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .food__menu__card__details h4{
+      font-size: 1.5rem;
+      color: #c9012e;
+      margin-left: 7.5px;
+  }
+
+  .food__list__container button{
+      margin-left: 35%;
+
+  }
   
+  .contact__us{
+      background-image: url(./assets/contact__bg.jpg) no-repeat center;
+      background-size: cover;
+      padding: 40px 0;
+  }
+
+  .contact__us h1{
+      margin-left: 5px;
+      text-align: center;
+      color: teal;
+      font-size: 40px;
+  }
+
+  .contact__form{
+      max-width: 600px;
+      margin: auto;
+      padding: 0 10px;
+      overflow: hidden;
+  }
+
+  .contact__form__text{
+      display: block;
+      width: 100%;
+      margin: 16px 0;
+      background: #111;
+      padding: 20px 40px;
+      outline: none;
+      color: #ddd;
+      transition: 0.5s;
+  }
+
+  .contact__form__text:focus{
+      box-shadow: 0 0 10px 4px #4b932e;
+  }
+
+  textarea .contact__form__text{
+      resize: none;
+      height: 120px;
+    }
+
+    .contact__us .button__primary{
+        margin-left: 35%;
+    }  
+
+    .footer__container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#c9012e ;
+    }
+
+    .footer__items{
+        text-align: center;
+    }
+
 
  @media(min-width:768px){
     
@@ -237,7 +310,7 @@ span{
         height: auto;
     }
 
-    /* .vertical__bar{
+    .vertical__bar{
         display: block;
         height: 100%;
         background:yellow;
@@ -247,7 +320,7 @@ span{
     }
 
     .social__icon{
-        height: 35%;
+        height: 35%; 
         width: 80px;
         background:#4b932e; 
         text-align: center;
@@ -262,7 +335,7 @@ span{
         padding: 8px;
         border: 1px solid #000;
         border-radius: 50%;
-    } */
+    }
 
     .navbar .fa{
         display: none;
@@ -289,7 +362,8 @@ span{
     }
 
     .text__menu{
-        padding-top: 5rem;
+        padding-top: 4rem;
+        font-size: 50px;
     }
 
 
@@ -308,4 +382,10 @@ span{
         margin: 10px;
       }
 
+      .food__list__container button{
+          margin: unset;
+      }
+    
+
+            
 } 
